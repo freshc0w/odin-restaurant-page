@@ -1,1 +1,1 @@
-console.log("Hello World"),console.log("can you hear mee");
+(()=>{"use strict";document.getElementById("content").textContent="HELLO WORLD"})();

@@ -1,4 +1,10 @@
 body {
     margin: 0;
     padding: 0;
+    
+    /* background-image: url(./imgs/burger-background.jpg); */
+    background-image: url(./imgs/burger-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
