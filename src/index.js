@@ -1,2 +1,3 @@
-console.log('Hello World')
-console.log('can you hear mee')
+import initialiseWebsite from "./website";
+
+initialiseWebsite();
