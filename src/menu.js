@@ -67,7 +67,7 @@ function createMenuItem(title, src, alt, description) {
 	const menuItem = document.createElement("div");
 	menuItem.classList.add("menu-item");
 
-	// In each menu item, there will be a header, img and some text.
+	// In each menu item, there will be a header, img and some description.
 	const menuHeader = document.createElement("h1");
 	menuHeader.classList.add("menuHeader");
 	menuHeader.textContent = title;
