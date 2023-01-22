@@ -58,6 +58,13 @@ function createNav() {
     return nav;
 }
 
+function createMain() {
+    const main = document.createElement('div');
+    main.classList.add('main');
+    main.textContent = 'Hello world'
+    return main;
+}
+
 function createFooter() {
     const footer = document.createElement('footer');
     footer.classList.add('footer');
@@ -73,7 +80,8 @@ function createFooter() {
 
 function initialiseWebsite() {
     const content = document.getElementById("content");
-    content.appendChild(createHeader()); 
+    content.appendChild(createHeader());
+    content.appendChild(createMain()); 
     content.appendChild(createFooter());
 }
 
