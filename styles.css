@@ -51,3 +51,7 @@ body {
     transform: scale(1.05);
     color: rgb(255, 255, 255);
 }
+
+.btn-nav.active {
+    border-bottom: 2px solid white;
+}
