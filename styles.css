@@ -1,7 +1,7 @@
 :root {
     --default-bg-color: rgba(0, 0, 0, 0.8);
-    --default-font-color: rgba(245, 245, 245);
-    --default-font-family: 'Montseratt', san-serif;
+    --default-font-color: rgba(240, 240, 240);
+    --default-font-family: 'Montserrat', san-serif;
 }
 
 @font-face {
@@ -13,7 +13,8 @@ body {
 
     margin: 0;
     padding: 0;
-    
+    box-sizing: border-box;
+
     /* background-image: url(./imgs/burger-background.jpg); */
     background-image: url(./imgs/burger-bg.jpg);
     background-size: cover;
@@ -28,10 +29,25 @@ body {
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
+    padding: 20px;
 }
 
 .restaurantName {
     font-family: 'headerFont';
-    font-size: 3.5rem;
+    font-size: 3.25rem;
     letter-spacing: .5rem;
+}
+
+.btn-nav {
+    color: var(--default-font-color);
+    background-color: rgba(0, 0, 0, 0);
+    font-family: var(--default-font-family);
+    font-size: 1.35rem;
+    padding: 1.25rem;
+    border: none;
+    cursor: pointer;
+}
+.btn-nav:hover {
+    transform: scale(1.05);
+    color: rgb(255, 255, 255);
 }
