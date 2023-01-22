@@ -14,7 +14,7 @@
 
 #content {
     min-height: 100vh;
-    /* position: relative; */
+    position: relative;
     display: flex; 
     flex-flow: column nowrap;
     align-items: center;
@@ -75,18 +75,46 @@ body,html {
 /* main content */
 .main {
     max-width: 800px;
-    padding: 4rem;
-    margin: 6rem 0;
+    padding: 3rem;
+    margin: 5rem 0;
     font-size: 2rem;
     background-color: var(--default-background-color-light);
     color: var(--default-font-color);
     font-family: var(--default-font-family);
     border: 2px solid var(--border-color);
+    backdrop-filter: blur(5px);
+}
+
+.home {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    text-shadow: 1px 1px 4px white;
+}
+
+.heading {
+    font-size: 1.5rem;
+    font-style: italic;
+    text-align: center;
+}
+
+.burger-place-img {
+    width: max(400px, 80%);
+    margin-top: 10px;
+    box-shadow: 0 0 0.5rem whitesmoke;
+    border-radius: 5px;
+}
+
+.para {
+    text-align: center;
+    font-size: 1.25rem;
+    margin-bottom: 0;
 }
 
 
+
 footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
