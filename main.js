@@ -1,1 +1,1 @@
-(()=>{"use strict";document.getElementById("content").textContent="HELLO WORLD"})();
+(()=>{"use strict";document.getElementById("content").appendChild(function(){const e=document.createElement("div");e.classList.add("header");const t=document.createElement("h1");return t.classList.add("restaurantName"),t.textContent="Burger Queen",e.appendChild(t),e}())})();
