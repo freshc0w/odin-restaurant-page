@@ -50,19 +50,19 @@ function createNav() {
     }
     
     const homeBtn = createBtn('Home');
-    const aboutBtn = createBtn('About');
     const menuBtn = createBtn('Menu');
+    const aboutBtn = createBtn('About');
     const contactBtn = createBtn('Contact');
 
-    let btnOptions = [homeBtn, aboutBtn, menuBtn, contactBtn];
-    let loadWebPage = [loadHome, loadAbout, loadMenu, loadContact]
+    let btnOptions = [homeBtn, menuBtn, aboutBtn, contactBtn];
+    let loadWebPage = [loadHome, loadMenu, loadAbout, loadContact]
 
     // Add btns into header
     for(let btn = 0; btn < btnOptions.length; btn++) {
         addClickFunction(btnOptions[btn], loadWebPage[btn]);
         nav.append(btnOptions[btn]);
     }
-    
+
     // Set Home button to be default active btn.
     setActiveBtn(homeBtn);
 

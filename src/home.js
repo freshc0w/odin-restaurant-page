@@ -28,12 +28,13 @@ function createHomePage() {
 
     home.appendChild(heading);
     home.appendChild(burgerPlace);
-    home.appendChild(para1);
-    home.appendChild(para2);
-    home.appendChild(para3);
-    home.appendChild(para4);
-    home.appendChild(para5);
-    home.appendChild(para6);
+    const paragraphs = [para1, para2, para3,
+                        para4, para5, para6];
+    
+    for(let para of paragraphs) {
+        home.appendChild(para);
+    }
+
     return home;
 }
 
