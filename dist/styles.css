@@ -1,4 +1,10 @@
+:root {
+    --default-bg-color: rgba(0, 0, 0, 0.8);
+    --default-font-color: rgba(245, 245, 245);
+}
+
 body {
+
     margin: 0;
     padding: 0;
     
@@ -7,4 +13,13 @@ body {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+}
+
+.header {
+    background-color: var(--default-bg-color);
+    color: var(--default-font-color);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
 }
