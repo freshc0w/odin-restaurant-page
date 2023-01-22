@@ -1,3 +1,8 @@
+import loadHome from "./home";
+import loadAbout from "./about";
+import loadMenu from "./menu";
+import loadContact from "./contact";
+
 // Create header
 function createHeader() {
     const header = document.createElement('div');
@@ -24,6 +29,7 @@ function createNav() {
         return btn;
         };
 
+    // Make sure to clear all active buttons before assigning a new active.
     const setActiveBtn = (targetBtn) => {
         const btns = document.querySelectorAll('.btn-nav');
         btns.forEach((btn) => {
@@ -33,25 +39,30 @@ function createNav() {
         targetBtn.classList.add('active');
     }
 
-    const addClickFunction = (targetBtn) => {
+    // addClickFunction checks if the current btn is active. It is is do nothing.
+    // Otherwise, set the button to be active and load the page based on the given parameter.
+    const addClickFunction = (targetBtn, loadPage) => {
         targetBtn.addEventListener("click", (e) => {
-        if(e.target.classList.contains("active")) return;
-        setActiveBtn(targetBtn);
+            if(e.target.classList.contains("active")) return;
+            setActiveBtn(targetBtn);
+            loadPage();
         })
     }
-
+    
     const homeBtn = createBtn('Home');
     const aboutBtn = createBtn('About');
     const menuBtn = createBtn('Menu');
     const contactBtn = createBtn('Contact');
 
     let btnOptions = [homeBtn, aboutBtn, menuBtn, contactBtn];
+    let loadWebPage = [loadHome, loadAbout, loadMenu, loadContact]
 
     // Add btns into header
-    for(let btn of btnOptions) {
-        addClickFunction(btn);
-        nav.append(btn);
+    for(let btn = 0; btn < btnOptions.length; btn++) {
+        addClickFunction(btnOptions[btn], loadWebPage[btn]);
+        nav.append(btnOptions[btn]);
     }
+    
     // Set Home button to be default active btn.
     setActiveBtn(homeBtn);
 
@@ -60,8 +71,10 @@ function createNav() {
 
 function createMain() {
     const main = document.createElement('div');
+    main.setAttribute('id', 'main');
     main.classList.add('main');
-    main.textContent = 'Hello world'
+
+    // Default home page
     return main;
 }
 
@@ -83,6 +96,7 @@ function initialiseWebsite() {
     content.appendChild(createHeader());
     content.appendChild(createMain()); 
     content.appendChild(createFooter());
+    loadHome(); // Default entry home page
 }
 
 export default initialiseWebsite;
