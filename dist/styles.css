@@ -1,6 +1,12 @@
 :root {
     --default-bg-color: rgba(0, 0, 0, 0.8);
     --default-font-color: rgba(245, 245, 245);
+    --default-font-family: 'Montseratt', san-serif;
+}
+
+@font-face {
+    font-family: 'headerFont';
+    src: url(./fonts/brushed/brushed.ttf);
 }
 
 body {
@@ -22,4 +28,10 @@ body {
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
+}
+
+.restaurantName {
+    font-family: 'headerFont';
+    font-size: 3.5rem;
+    letter-spacing: .5rem;
 }
