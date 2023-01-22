@@ -36,3 +36,6 @@ Header:
 3. Footer:
     Copyright @ 2023 freshc0w [github logo]
     
+useful links:
+to decribe burgers:
+https://www.beefitswhatsfordinner.com/foodservice/menu-concepts-diner-insights/the-beef-burger#:~:text=Consumers%20also%20used%20adjectives%20like,with%20toppings%20of%20my%20choice.%22
