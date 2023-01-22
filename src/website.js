@@ -55,7 +55,7 @@ function createNav() {
     const contactBtn = createBtn('Contact');
 
     let btnOptions = [homeBtn, menuBtn, aboutBtn, contactBtn];
-    let loadWebPage = [loadHome, loadMenu, loadAbout, loadContact]
+    let loadWebPage = [loadHome, loadMenu, loadAbout, loadContact];
 
     // Add btns into header
     for(let btn = 0; btn < btnOptions.length; btn++) {
@@ -87,7 +87,7 @@ function createFooter() {
 
     // Add github icon with link
 
-    footer.appendChild(copyright)
+    footer.appendChild(copyright);
     return footer; 
 }
 
