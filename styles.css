@@ -9,8 +9,12 @@
     src: url(./fonts/brushed/brushed.ttf);
 }
 
-body {
-
+#content {
+    height: 100vh;
+    position: relative;
+}
+body,html {
+    position: relative;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -23,6 +27,7 @@ body {
 }
 
 .header {
+
     background-color: var(--default-bg-color);
     color: var(--default-font-color);
     display: flex;
@@ -36,6 +41,8 @@ body {
     font-family: 'headerFont';
     font-size: 3.25rem;
     letter-spacing: .5rem;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 .btn-nav {
@@ -54,4 +61,20 @@ body {
 
 .btn-nav.active {
     border-bottom: 2px solid white;
+}
+
+
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--default-bg-color);
+    color: var(--default-font-color);
+    font-family: var(--default-font-family);
+    display: flex;
+    justify-content: center;
+    
+
 }
