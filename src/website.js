@@ -52,19 +52,29 @@ function createNav() {
         addClickFunction(btn);
         nav.append(btn);
     }
+    // Set Home button to be default active btn.
+    setActiveBtn(homeBtn);
 
     return nav;
-
 }
 
+function createFooter() {
+    const footer = document.createElement('footer');
+    footer.classList.add('footer');
 
+    const copyright = document.createElement('p');
+    copyright.textContent = `Copyright @ ${new Date().getFullYear()} freshc0w`;
 
+    // Add github icon with link
 
-
-
+    footer.appendChild(copyright)
+    return footer; 
+}
 
 function initialiseWebsite() {
     const content = document.getElementById("content");
     content.appendChild(createHeader()); 
+    content.appendChild(createFooter());
 }
+
 export default initialiseWebsite;
