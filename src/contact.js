@@ -8,15 +8,26 @@ function createContactPage() {
 
     const address = document.createElement('p');
     address.classList.add('contactLine');
-    address.textcontent = '🏠 123 Main St, Anytown USA 12345';
-    
-    
+    address.textContent = '🏠 123 Main St, Anytown USA 12345';
+
+    const map = document.createElement('img');
+    map.classList.add('burger-place-img');
+    map.src = 'imgs/fake-map.png';
+    map.alt = 'Fake google map of a random place labelled 123 Main St.'
+
+    const contactSections = [phoneNum, address, map];
+    for(let section of contactSections) {
+        aboutPage.appendChild(section);
+    }
+
+    return aboutPage;
 }
 
 
 function loadContact() {
     const main = document.getElementById('main');
     main.textContent = '';
+    main.appendChild(createContactPage());
     
 };
 
