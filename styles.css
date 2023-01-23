@@ -159,6 +159,11 @@ body,html {
     font-size: 1.2rem;
 }
 
+.contactLine {
+    font-size: 1.2rem;
+    margin-top: 5px;
+}
+
 footer {
     position: fixed;
     bottom: 0;
