@@ -39,7 +39,7 @@ function createNav() {
 		targetBtn.classList.add("active");
 	};
 
-	// addClickFunction checks if the current btn is active. It is is do nothing.
+	// addClickFunction checks if the current btn is active. If it is do nothing.
 	// Otherwise, set the button to be active and load the page based on the given parameter.
 	const addClickFunction = (targetBtn, loadPage) => {
 		targetBtn.addEventListener("click", (e) => {
