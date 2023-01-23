@@ -4,13 +4,13 @@ function createHomePage() {
 
     // Add burger joint interior img
     const burgerPlace = document.createElement('img');
-    burgerPlace.classList.add('burger-place-img')
+    burgerPlace.classList.add('burger-place-img');
     burgerPlace.src="imgs/burger-joint.jpg";
     burgerPlace.alt="Burger place interior";
 
     const heading = document.createElement('h2');
     heading.classList.add('heading');
-    heading.textContent = 'Hello ANYA and welcome to the BIGGER BETTER BURGER BASEMENT! \n Serving since \'50s!';
+    heading.textContent = 'Hello and welcome to the BIGGER BETTER BURGER BASEMENT! \n Serving since \'50s!';
     
     const para1 = createPara('At Bigger Better Burger Basement, we pledge ourselves in offering you' +
         ' the best goddamn burger you\'ve ever had in your goddamn life.');
